@@ -13,7 +13,7 @@ https://www.deplacemaison.com/
 https://www.hoffmannmusica.com.ar
 https://deejaystore.com.ar/
 
-Descripcion: Estos links fueron elegidos porque le permiten al usuario acceder facilmente a los productos y categorias. Las paginas son muy atractivas a la vista y ontienen un llamado a la acción de forma intuitiva. 
+Descripcion: Estos links fueron elegidos porque le permiten al usuario acceder facilmente a los productos y categorias. Las paginas son muy atractivas a la vista y obtienen un llamado a la acción de forma intuitiva. 
 
 
 
