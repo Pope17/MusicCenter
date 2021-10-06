@@ -18,6 +18,11 @@ Descripcion: Estos links fueron elegidos porque le permiten al usuario acceder f
 El link del repositorio del equipo 6:
 https://github.com/Pope17/grupo_-6_MusicCenter.git
 
+Link de trabajo de Trello:
+https://trello.com/b/7KRXEEfG/musiccenter
+
+
+
 
 
 
