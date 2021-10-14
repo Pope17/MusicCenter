@@ -1,0 +1,22 @@
+{
+  "name": "musiccenter",
+  "version": "1.0.0",
+  "description": "Los productos que brindará nuestro sitio serán artiulos para DJs, y alquiler de equipos. Ajustaremos nuestra oferta a la demanda del momento.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pope17/MusicCenter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pope17/MusicCenter/issues"
+  },
+  "homepage": "https://github.com/Pope17/MusicCenter#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
