@@ -1,0 +1,358 @@
+html {
+    font-size: 62.5%;
+    /** Reset para REMS 62.5% = 10px de 16px **/
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    background-color: #dfdbdb;
+    box-sizing: border-box;
+}
+
+/* Globales */
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 110rem;
+    /** 1200px **/
+   margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+    line-height: 4rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+
+/** Utilidades **/
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+.d-block {
+    display: block!important;
+}
+
+.contenido-centrado {
+    max-width: 800px;
+}
+
+.boton {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+}
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+
+.boton-amarillo {
+    background-color: #f5b301;
+}
+
+.boton-todos {
+    background-color: #1e2328;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+/* Header */
+.site-header {
+    background-color: #3b3f46;
+    padding: 1rem 0 3rem 0;
+}
+
+.site-header.inicio {
+    background-image: url(/img/back-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-header {
+        text-align: left;
+    }
+}
+
+.contenido-header h1 {
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+
+.barra {
+    padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+/* Navegacion */
+.navegacion {
+    display: none;
+}
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 2.2rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        margin-right: 2rem;
+        font-size: 1.8rem;
+        /** 18px = 1.8 rem **/
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+}
+
+.navegacion a:hover {
+    color: #f5b301;
+}
+
+
+.burger-menu{
+    text-align: center;
+  }
+  .burger-menu svg{
+    background-color:#f5b301;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 5rem;
+    margin: 10px 0px 20px 0px;
+    padding: 15px;
+  }
+
+/** Iconos Nosotros **/
+
+@media (min-width: 768px) {
+    .iconos-nosotros {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+.icono {
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+.icono h3 {
+    text-transform: uppercase;
+}
+
+/** Anuncios **/
+
+@media (min-width: 768px) {
+    .contenedor-anuncios {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.anuncio {
+    border: 1px solid #b5b5b5;
+    background-color: whitesmoke;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .anuncio {
+        flex-basis: calc(33.3% - 1rem);
+    }
+}
+
+.contenido-anuncio {
+    padding: 2rem;
+    line-height: 1;
+}
+
+.contenido-anuncio h3,
+.contenido-anuncio p {
+    margin: 1;
+}
+
+.precio {
+    color: #2a2e34;
+    font-weight: 700;
+}
+
+.iconos-caracteristicas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 500px;
+}
+
+/* .iconos-caracteristicas li {
+    flex: 1;
+    display: flex;
+}
+
+.iconos-caracteristicas li svg {
+    margin-right: 2rem;
+} */
+
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/** Contacto Pioneer **/
+
+.imagen-contacto {
+    background-image: url(/img/back-3.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto {
+    flex: 0 0 95%;
+    color: #ffffff;
+}
+
+.contenido-contacto p {
+    font-size: 1.8rem;
+}
+
+/* Cuarta Seccion */
+
+.final {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3rem;
+  }
+  
+  .final article {
+    margin: 40px 0;
+    color: #1e2328;
+  }
+  .final article div {
+    margin-bottom: 9px;
+  }
+
+  .final .contenedor-final p{
+      padding: 2rem;
+  }
+
+
+
+/* footer */
+
+.site-footer {
+    background-color: #333333;
+    margin: 0;
+}
+
+.contenedor-footer {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.site-footer nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+     .navegacion{
+         display: block;
+     }
+    .burger-menu {
+        display: none;
+    }
+    
+    .contenedor-final{
+        display: flex;
+        justify-content: space-around;
+    }
+    .contenedor-final article{
+        width: 50%;
+    }
+    .site-footer nav {
+        display: block;
+    }
+}
+
+.copyright {
+    margin: 0;
+    color: #ffffff;
+}

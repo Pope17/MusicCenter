@@ -1,10 +1,10 @@
-Los productos que brindará nuestro sitio serán artiulos para DJs, y alquiler de equipos. Ajustaremos nuestra oferta a la demanda del momento. 
+Los productos que brindará nuestro sitio serán articulos para DJs, y alquiler de equipos. Ajustaremos nuestra oferta a la demanda del momento. 
 
 Esta tienda se especializa en la venta de los mejores productos para tus dj set, tales como parlantes, mixers, placas de sonido, bandejas y todo lo que necesites para convertirte en el dj del momento.
 Ayrton Juárez, 24 años, gran vendedor online
 Ramiro Beccar Varela, 42 años, especialista en asesoramiento del rubro
 Manuel Ratto Jorgensen, 19 años, scouting de productos
-Isaan Solis, 29 años, director de producto
+Isaac Solis, 29 años, director de producto
 
 Link de referencias
 https://www.famusic.com.ar/ 
