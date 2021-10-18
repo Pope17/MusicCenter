@@ -12,3 +12,7 @@ app.listen(PUERTO, function(){
 app.get('/', function(req,res){
     res.sendFile(path.join(__dirname, './views/home.html'))
 })
+
+app.get('/productCart', function(req,res){
+    res.sendFile(path.join(__dirname, './views/productCart.html'))
+})

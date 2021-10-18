@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e2328;
+    color: whitesmoke;
+}
+.carrito {
+    text-align: center;
+    margin-top: 10vh;
+    margin-right: 0px;
+    margin-bottom: 10vh;
+    margin-left: 0px;
+    color:#F5B301;
+}
+
+.flex-container{
+    display: flex;
+    padding-left: 30px;
+    justify-content: space-between;
+    width: 80%;
+}
+.cantidad{
+    display: flex;
+    padding-left: 170px;
+    border-bottom:3px solid rgb(48, 48, 48);
+}
+
+.producto{
+    display: flex;
+    border-bottom:3px solid rgb(48, 48, 48);
+}
+
+.imagen-producto{
+    width: 80px;
+    height: 80px;
+    padding: 3px;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.detalles{
+    width: 150px;
+    height: 80px;
+    color: #FED053;
+    text-align: center;
+    text-decoration: none;
+}
+
+.boton-cantidad{
+    padding-top: 5px;
+    padding-left: 10px;
+    width: 30px;
+    height: 20px;
+
+}
+
+.boton-seguir-comprando{
+    background-color:#1e2328;
+    border: 3px solid #F5B301;
+    width: 180px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.vacio{
+    padding: 10px;
+}
+
+.boton-actualizar-carrito{
+    background-color:#1e2328;
+    border: 3px solid #F5B301;
+    width: 180px;
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.linea-separadora{
+    border-bottom:1px solid rgb(112, 112, 112);
+    width: 2000px;
+}
+
+.padding{
+    padding:15px;
+}
+
+.botones{
+    padding-left: 10px;
+    padding-bottom: 30px;
+    border-bottom:1px solid rgb(112, 112, 112);
+    width: 2000px;
+}
+
+h2{
+    color: #F5B301;
+    text-align: center;
+    display: flex;
+    padding-left: 100px;
+    padding-top: 5px;
+}
+
+h4{
+    color: #F5B301;
+}
+
+.precio{
+    padding-left: 30px;
+}
+
+strong{
+    color: #FED053;
+}
+
+.total{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.checkout{
+    margin-top: 25px;
+    padding-left: 115px;
+}
+
+.pre-checkout{
+    padding:20px;
+}
+
+@media  (min-width: 750px) {
+    .woocommerce-Price-currencySymbol{
+        padding-right: 100px;
+    }
+
+}
