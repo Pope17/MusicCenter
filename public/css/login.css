@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+form {
+    font: 'roboto';
+}
+
+body {
+    background-color:#ebebeb;
+    padding: 30px 20px;
+    align-items: center;
+}
+
+input {
+background: #FFFFFF;
+margin: 0px 0px 15.52px;
+padding: 6px 11.64px;
+width: 100%;
+}
+
+div:hover{
+    box-shadow: silver;
+}
+
+h3 {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    color: #555;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: .5em;
+    text-rendering: optimizeSpeed;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h3 {
+    color: #555;
+    transition-property: color, color;
+}
+
+label {
+    color: #8b8b8b;
+    font-weight: bold;
+    display: block;
+    font-size: .9em;
+    margin-bottom: 0.4em;
+    font-size: 18px;
+}
+
+.recordar {
+    position: relative;
+    bottom: -34px;
+    left: -80px;
+}
+.uppercase {
+    line-height: 1.05;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+<!-- good music -->
+
+
+button {
+    font-style: inherit;
+    font-weight: 1em;
+    font-size: 4px;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+    background-color: #f5571d;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+
+
+
+@media (min-width: 361px) {
+
+}
+
+@media (min-width: 769px) {
+    form {
+        width: 30%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
