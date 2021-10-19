@@ -23,8 +23,6 @@ app.get('/login', function(req,res){
 })
 
 
-
-
 app.listen(PUERTO, function(){
     console.log('Servidor corriendo en la ruta 3000')
 });
