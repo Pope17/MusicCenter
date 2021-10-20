@@ -22,6 +22,10 @@ app.get('/login', function(req,res){
     res.sendFile(path.join(__dirname, './views/login.html'))
 })
 
+app.get('/productCart', function(req,res){
+    res.sendFile(path.join(__dirname, './views/productCart.html'))
+})
+
 
 app.listen(PUERTO, function(){
     console.log('Servidor corriendo en la ruta 3000')

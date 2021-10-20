@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,13 +11,14 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4hKRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
+
 <body>
     <header class="site-header">
         <!-- Encabezado-->
         <div class="contenedor contenido-header">
             <div class="barra">
 
-                <a href="/index.html">
+                <a href="/">
                     <!-- Logo-->
                     <img src="/img/logo-music.svg" alt="Logo Music Store">
                 </a>
@@ -24,11 +26,11 @@
 
                 <nav class="navegacion">
                     <!-- Barra de Navegacion-->
-                    <a target="_blank" href="#">Nosotros</a>
-                    <a href="#">Productos</a>
-                    <a href="#">Registro</a>
-                    <a href="#">Contacto</a>
-                    <a href="#"> <svg xmlns="http://www.w3.org/2000/svg"
+                    <a href="/register">Nosotros</a>
+                    <a href="/productDetail">Productos</a>
+                    <a href="/register">Registro</a>
+                    <a href="/login">Contacto</a>
+                    <a href="/productCart"> <svg xmlns="http://www.w3.org/2000/svg"
                             class="icon icon-tabler icon-tabler-shopping-cart" width="32" height="32"
                             viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
                             stroke-linejoin="round">
@@ -50,19 +52,19 @@
                     <line x1="4" y1="12" x2="20" y2="12" />
                     <line x1="4" y1="18" x2="20" y2="18" />
                 </svg>
-             <!-- contenedor -->
+                <!-- contenedor -->
     </header>
-<!--Este es el titulo de la pagina-->
+    <!--Este es el titulo de la pagina-->
     <main class="main">
         <h1 class="carrito">Mi carrito</h1>
 
         <!--Esta es la parte media de la pagina-->
         <div class="flex-container">
             <div>
-                <p class= "producto">Producto </p>
+                <p class="producto">Producto </p>
             </div>
             <div>
-                <p class= "cantidad">Cantidad</p>
+                <p class="cantidad">Cantidad</p>
             </div>
         </div>
 
@@ -71,50 +73,90 @@
                 <img class="imagen-producto" src="img/img-microfono.jpg" alt="Microfonos">
             </div>
             <div>
-                <a class="detalles" href= https://tododj.com/shop/sonido/microfonos-y-pies-para-microfono/microfonos-inalambricos-vhf/2-microfonos-gbr-microfono-karaoke-vhf-mano-vincha-corbatero>2 Microfonos Gbr Karaoke Vhf Mano Vincha Corbatero</a>
+                <a class="detalles"
+                    href=https://tododj.com/shop/sonido/microfonos-y-pies-para-microfono/microfonos-inalambricos-vhf/2-microfonos-gbr-microfono-karaoke-vhf-mano-vincha-corbatero>2
+                    Microfonos Gbr Karaoke Vhf Mano Vincha Corbatero</a>
             </div>
             <div class="boton-cantidad">
                 <label for="boton-cantidad"></label>
-                <select style="cursor: pointer;" class= "cant"  name="cant" id="cantidad">
-                <option class= "cant" value="1">1</option>
-                <option class= "cant" value="2">2</option>
-                <option class= "cant" value="3">3</option>
-                <option class= "cant" value="4">4</option>
-                <option class= "cant" value="5">5</option>
+                <select style="cursor: pointer;" class="cant" name="cant" id="cantidad">
+                    <option class="cant" value="1">1</option>
+                    <option class="cant" value="2">2</option>
+                    <option class="cant" value="3">3</option>
+                    <option class="cant" value="4">4</option>
+                    <option class="cant" value="5">5</option>
                 </select>
             </div>
-            </div>
-
-            <div class="linea-separadora"></div>
-            <div class="padding"></div>
-    <div class="botones">   
-        <p class="boton-seguir-comprando">SEGUIR COMPRANDO</p>
-        <div class="vacio"></div>
-        <p class="boton-actualizar-carrito">ACTUALIZAR CARRITO</p>
-    </div>
-<!--Aca se encuentra los valores y el Link para proceder con la compra-->
-    <div class="total">
-             <h2>Total del carrito</h2>
-             <div class="flex-container">
-                 <div class="subtotal">Subtotal</div>
-             <div class="precio">$ 60.00</div>
-            </div>
-                
-                <h4>Shipping</h4>
-
-                <div>Envíos solo en <strong>Argentina.</strong></div> 
-                <a>Cambiar dirección</a>
-            <span>
-            <select data-placeholder="State / County" placeholder="State / County"><option value="">Seleccionar opción…</option><option value="C">Ciudad Autónoma de Buenos Aires</option><option value="B">Buenos Aires</option><option value="K">Catamarca</option><option value="H">Chaco</option><option value="U">Chubut</option><option value="X">Córdoba</option><option value="W">Corrientes</option><option value="E">Entre Ríos</option><option value="P">Formosa</option><option value="Y">Jujuy</option><option value="L">La Pampa</option><option value="F">La Rioja</option><option value="M">Mendoza</option><option value="N">Misiones</option><option value="Q">Neuquén</option><option value="R">Río Negro</option><option value="A">Salta</option><option value="J">San Juan</option><option value="D">San Luis</option><option value="Z">Santa Cruz</option><option value="S">Santa Fe</option><option value="G">Santiago del Estero</option><option value="V">Tierra del Fuego</option><option value="T">Tucumán</option></select>
-            </span></p>
-            <input type="hidden" id="woocommerce-shipping-calculator-nonce" name="woocommerce-shipping-calculator-nonce" value="3eaecb098a"><input type="hidden" name="_wp_http_referer" value="/cart-3"></section></form></td></tr><tr class="order-total"><th>Total </th><td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">$ </span>60.00</span></strong></td></tr></tbody></table><div class="wc-proceed-to-checkout">
         </div>
-    </div>
-    <div class="pre-checkout"></div>
-    <a class="checkout" href="-"> Proceder a la compra</a>
-</div>
 
-    </div>
+        <div class="linea-separadora"></div>
+        <div class="padding"></div>
+        <div class="botones">
+            <p class="boton-seguir-comprando">SEGUIR COMPRANDO</p>
+            <div class="vacio"></div>
+            <p class="boton-actualizar-carrito">ACTUALIZAR CARRITO</p>
+        </div>
+        <!--Aca se encuentra los valores y el Link para proceder con la compra-->
+        <div class="total">
+            <h2>Total del carrito</h2>
+            <div class="flex-container">
+                <div class="subtotal">Subtotal</div>
+                <div class="precio">$ 60.00</div>
+            </div>
+
+            <h4>Shipping</h4>
+
+            <div>Envíos solo en <strong>Argentina.</strong></div>
+            <a>Cambiar dirección</a>
+            <span>
+                <select data-placeholder="State / County" placeholder="State / County">
+                    <option value="">Seleccionar opción…</option>
+                    <option value="C">Ciudad Autónoma de Buenos Aires</option>
+                    <option value="B">Buenos Aires</option>
+                    <option value="K">Catamarca</option>
+                    <option value="H">Chaco</option>
+                    <option value="U">Chubut</option>
+                    <option value="X">Córdoba</option>
+                    <option value="W">Corrientes</option>
+                    <option value="E">Entre Ríos</option>
+                    <option value="P">Formosa</option>
+                    <option value="Y">Jujuy</option>
+                    <option value="L">La Pampa</option>
+                    <option value="F">La Rioja</option>
+                    <option value="M">Mendoza</option>
+                    <option value="N">Misiones</option>
+                    <option value="Q">Neuquén</option>
+                    <option value="R">Río Negro</option>
+                    <option value="A">Salta</option>
+                    <option value="J">San Juan</option>
+                    <option value="D">San Luis</option>
+                    <option value="Z">Santa Cruz</option>
+                    <option value="S">Santa Fe</option>
+                    <option value="G">Santiago del Estero</option>
+                    <option value="V">Tierra del Fuego</option>
+                    <option value="T">Tucumán</option>
+                </select>
+            </span></p>
+            <input type="hidden" id="woocommerce-shipping-calculator-nonce" name="woocommerce-shipping-calculator-nonce"
+                value="3eaecb098a"><input type="hidden" name="_wp_http_referer" value="/cart-3"></section>
+            </form>
+            </td>
+            </tr>
+            <tr class="order-total">
+                <th>Total </th>
+                <td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><span
+                                class="woocommerce-Price-currencySymbol">$ </span>60.00</span></strong></td>
+            </tr>
+            </tbody>
+            </table>
+            <div class="wc-proceed-to-checkout">
+            </div>
+        </div>
+        <div class="pre-checkout"></div>
+        <a class="checkout" href="-"> Proceder a la compra</a>
+        </div>
+
+        </div>
     </main>
 
     <footer class="site-footer seccion">
@@ -156,4 +198,5 @@
         </div>
     </footer>
 </body>
+
 </html>
