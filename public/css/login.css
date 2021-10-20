@@ -4,6 +4,82 @@
     box-sizing: border-box;
 }
 
+.site-header {
+    background-color: #3b3f46;
+    padding: 1rem 0 3rem 0;
+}
+
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-header {
+        text-align: left;
+        
+    }
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navegacion {
+        display: none;
+    }
+    .navegacion a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-size: 2.2rem;
+    }
+    [20:24, 18/10/2021] +57 305 8695287:  .navegacion a {
+        display: inline-block;
+        margin-right: 2rem;
+        font-size: 1.8rem;
+        /* 18px = 1.8 rem */
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+}
+
+.navegacion a:hover {
+    color: #f5b301;
+}
+
+
+.burger-menu{
+    text-align: center;
+  }
+  .burger-menu svg{
+    background-color: #2a2e34;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 15px;
+  }
+ html {
+    font-size: 62.5%;
+    /* Reset para REMS 62.5% = 10px de 16px */
+}
+
+.contenido-header h1 {
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+
+.barra {
+    padding-top: 1rem;
+}
+
 form {
     font: 'roboto';
 }
@@ -65,28 +141,29 @@ label {
     letter-spacing: .05em;
     text-transform: uppercase;
 }
-<!-- good music -->
+
+<!-- good music  -->
 
 
-button {
-    font-style: inherit;
-    font-weight: 1em;
-    font-size: 4px;
-    text-rendering: auto;
-    color: -internal-light-dark(black, white);
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    box-sizing: border-box;
-    background-color: #f5571d;
-    margin: 0em;
-    padding: 1px 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-image: initial;
+.add{
+    border-radius: 8px;
+    padding: 7px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #fedd33;
+    color: #2a2e34;
 }
+
+.site-footer {
+    background-color: #333333;
+    margin: 0;
+}
+
+.contenedor-footer {
+    padding: 3rem 0;
+    text-align: center;
+}
+
 
 
 
@@ -98,16 +175,65 @@ button {
 @media (min-width: 769px) {
     form {
         width: 30%;
+    }x  
+    .contenido-header {
+        text-align: left;
+        
+    }
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
+    .navegacion {
+        display: none;
+    }
+    .navegacion a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-size: 2.2rem;
+    }
+    [20:24, 18/10/2021] +57 305 8695287:  .navegacion a {
+        display: inline-block;
+        margin-right: 2rem;
+        font-size: 1.8rem;
+        /* 18px = 1.8 rem */
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    .site-footer nav {
+        display: none;
+    }
 
+    .navegacion{
+        display: block;
+    }
+   .burger-menu {
+       display: none;
+   }
+   
+   .contenedor-final{
+       display: flex;
+       justify-content: space-around;
+   }
+   .contenedor-final article{
+       width: 50%;
+   }
+   .site-footer nav {
+       display: block;
+   }
 
-
-
-
-
-
-
+   .copyright {
+    margin: 0;
+    color: #ffffff;
+}
 
 }

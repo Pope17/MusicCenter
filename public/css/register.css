@@ -55,22 +55,13 @@ label {
 <!-- Boton acceder -->
 
 
-button {
-    font-style: inherit;
-    font-weight: 1em;
-    font-size: 4px;
-    text-rendering: auto;
-    color: -internal-light-dark(black, white);
-    text-shadow: none;
-    display: inline-block;
-    text-align: center;
-    align-items: flex-start;
-    box-sizing: border-box;
-    background-color: 
-    padding: 1px 6px;
-    border-width: 2px;
-    border-style: outset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+.add{
+    border-radius: 8px;
+    padding: 7px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #fedd33;
+    color: #2a2e34;
 }
 
 .politica:hover {
