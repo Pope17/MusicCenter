@@ -1,3 +1,8 @@
+html {
+    font-size: 62.5%;
+    /* Reset para REMS 62.5% = 10px de 16px */
+}
+
 *{
     margin: 0px;
     padding: 0px;    
@@ -89,7 +94,83 @@ body {
     padding: 30px 20px;
     align-items: center;
 }
+.site-header {
+    background-color: #3b3f46;
+    padding: 1rem 0 3rem 0;
+}
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
 
+@media (min-width: 768px) {
+    .contenido-header {
+        text-align: left;
+    }
+}
+
+.contenido-header h1 {
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+
+.barra {
+    padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+/* Navegacion */
+.navegacion {
+    display: none;
+}
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 2.2rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        margin-right: 2rem;
+        font-size: 1.8rem;
+        /* 18px = 1.8 rem */
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+}
+
+.navegacion a:hover {
+    color: #f5b301;
+}
+
+
+.burger-menu{
+    text-align: center;
+  }
+  .burger-menu svg{
+    background-color: #2a2e34;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    margin: 10px 0px 20px 0px;
+    padding: 15px;
+  }
 input {
 background: #FFFFFF;
 margin: 0px 0px 15.52px;
@@ -141,8 +222,12 @@ label {
     letter-spacing: .05em;
     text-transform: uppercase;
 }
+<<<<<<< HEAD
 
 <!-- good music  -->
+=======
+/*<!-- good music -->*/
+>>>>>>> a9b96220b0e204f9f78fa7232f32507b1532a609
 
 
 .add{
@@ -213,6 +298,7 @@ label {
         display: none;
     }
 
+<<<<<<< HEAD
     .navegacion{
         display: block;
     }
@@ -235,5 +321,62 @@ label {
     margin: 0;
     color: #ffffff;
 }
+=======
+    .site-footer {
+        background-color: #333333;
+        margin: 0;
+    }
+    
+    .contenedor-footer {
+        padding: 3rem 0;
+        text-align: center;
+    }
+    
+    @media (min-width: 768px) {
+        .contenedor-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+    .site-footer nav {
+        display: none;
+    }
+    
+    @media (min-width: 768px) {
+         .navegacion{
+             display: block;
+         }
+        .burger-menu {
+            display: none;
+        }
+        
+        .contenedor-final{
+            display: flex;
+            justify-content: space-around;
+        }
+        .contenedor-final article{
+            width: 50%;
+        }
+        .site-footer nav {
+            display: block;
+        }
+    }
+    
+    .copyright {
+        margin: 0;
+        color: #ffffff;
+    }
+    
+    
+    
+    
+
+
+
+
+
+
+>>>>>>> a9b96220b0e204f9f78fa7232f32507b1532a609
 
 }
