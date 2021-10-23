@@ -42,7 +42,7 @@ html {
         display: block;
         font-size: 2.2rem;
     }
-    [20:24, 18/10/2021] +57 305 8695287:  .navegacion a {
+    .navegacion a {
         display: inline-block;
         margin-right: 2rem;
         font-size: 1.8rem;
@@ -222,12 +222,7 @@ label {
     letter-spacing: .05em;
     text-transform: uppercase;
 }
-<<<<<<< HEAD
-
-<!-- good music  -->
-=======
 /*<!-- good music -->*/
->>>>>>> a9b96220b0e204f9f78fa7232f32507b1532a609
 
 
 .add{
@@ -280,7 +275,7 @@ label {
         display: block;
         font-size: 2.2rem;
     }
-    [20:24, 18/10/2021] +57 305 8695287:  .navegacion a {
+    .navegacion a {
         display: inline-block;
         margin-right: 2rem;
         font-size: 1.8rem;
@@ -298,30 +293,6 @@ label {
         display: none;
     }
 
-<<<<<<< HEAD
-    .navegacion{
-        display: block;
-    }
-   .burger-menu {
-       display: none;
-   }
-   
-   .contenedor-final{
-       display: flex;
-       justify-content: space-around;
-   }
-   .contenedor-final article{
-       width: 50%;
-   }
-   .site-footer nav {
-       display: block;
-   }
-
-   .copyright {
-    margin: 0;
-    color: #ffffff;
-}
-=======
     .site-footer {
         background-color: #333333;
         margin: 0;
@@ -377,6 +348,5 @@ label {
 
 
 
->>>>>>> a9b96220b0e204f9f78fa7232f32507b1532a609
 
 }

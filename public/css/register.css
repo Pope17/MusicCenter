@@ -140,15 +140,6 @@ label {
 /*<!-- Boton acceder -->*/
 
 
-<<<<<<< HEAD
-.add{
-    border-radius: 8px;
-    padding: 7px;
-    text-transform: uppercase;
-    font-weight: bold;
-    background-color: #fedd33;
-    color: #2a2e34;
-=======
 button {
     font-style: inherit;
     font-weight: 1em;
@@ -167,7 +158,6 @@ button {
     border-style: outset;
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-image: initial;
->>>>>>> a9b96220b0e204f9f78fa7232f32507b1532a609
 }
 
 .politica:hover {
