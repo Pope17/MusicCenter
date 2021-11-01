@@ -14,6 +14,11 @@ html {
     padding: 1rem 0 3rem 0;
 }
 
+/*.guitarra{
+    width: 100%;
+    top: 100%;
+} */
+
 .contenido-header {
     display: flex;
     flex-direction: column;
@@ -21,6 +26,24 @@ html {
     justify-content: space-between;
     text-align: center;
 }
+
+input {
+    text-align: center;
+background: #FFFFFF;
+margin: 0px 0px 15.52px;
+padding: 6px 11.64px;
+width: 100%;
+}
+
+
+form {
+    border-radius: 3px solid blue;
+    box-sizing: border-box;
+    padding: 4em;
+    width: 50em;
+    text-align: center;
+}
+
 
 @media (min-width: 768px) {
     .contenido-header {
@@ -86,10 +109,15 @@ html {
 }
 
 form {
-    font: 'roboto';
+    border-radius: 3px solid blue;
+    box-sizing: border-box;
+    padding: 4em;
+    width: 50em;
+    text-align: center;
 }
 
 body {
+
     background-color:#ebebeb;
    /* padding: 30px 20px;*/
     align-items: center;
@@ -153,6 +181,10 @@ body {
     .navegacion a:last-of-type {
         margin: 0;
     }
+    form {
+        text-align: center;
+        width: 30%;
+        }
 }
 
 .navegacion a:hover {
@@ -171,20 +203,14 @@ body {
     margin: 10px 0px 20px 0px;
     padding: 15px;
   }
-input {
-background: #FFFFFF;
-margin: 0px 0px 15.52px;
-padding: 6px 11.64px;
-width: 100%;
-}
-
+  
 div:hover{
     box-shadow: silver;
 }
 
 h3 {
-    font-family: "Lato", sans-serif;
-    font-size: 1em;
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
     color: #555;
     width: 100%;
     margin-top: 0;
@@ -248,13 +274,16 @@ label {
 
 
 
-@media (min-width: 361px) {
-
+@media (min-width: 325px) {
+    form {
+        text-align: center;
+        width: 40em;
+        }
 }
 
 @media (min-width: 769px) {
     form {
-        width: 30%;
+        width: 40em;
     }x  
     .contenido-header {
         text-align: left;
@@ -337,6 +366,17 @@ label {
     .copyright {
         margin: 0;
         color: #ffffff;
+    }
+
+    @media (min-width: 1024px) {
+        form {
+            margin-top: 0em;
+            margin-right: 5em;
+            margin-left: 20em;
+            padding-left: 120px;
+            text-align: center;
+            width: 40em;
+            }
     }
     
     
