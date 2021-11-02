@@ -1,32 +1,20 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const PUERTO = 3000;
 
-app.use(express.static('./public'));
+//disponibilizamos Public
+app.use(express.static(path.join(__dirname, 'public')));
 
+//requerimos el archivo de ruta
 
+const mainRoutes = require('./routes/mainRoutes')
 
-app.get('/', function(req,res){
-    res.sendFile(path.join(__dirname, './views/home.html'))
+//Rutas
+
+app.use('/', mainRoutes)
+
+//rutas de productos
+
+app.listen(3000, () => {
+    console.log('Servidor funcionando')
 })
-
-app.get('/productDetail', function(req, res){
-    res.sendFile(path.join(__dirname, './views/productDetail.html'))
-})
-app.get('/register', function(req,res){
-    res.sendFile(path.join(__dirname, './views/register.html'))
-})
-
-app.get('/login', function(req,res){
-    res.sendFile(path.join(__dirname, './views/login.html'))
-})
-
-app.get('/productCart', function(req,res){
-    res.sendFile(path.join(__dirname, './views/productCart.html'))
-})
-
-
-app.listen(PUERTO, function(){
-    console.log('Servidor corriendo en la ruta 3000')
-});
