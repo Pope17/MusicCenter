@@ -1,13 +1,14 @@
 const express = require('express');
 const app = express();
-const path = require('path');
 
 //disponibilizamos Public
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static('public'));
 
 //requerimos el archivo de ruta
 
-const mainRoutes = require('./routes/mainRoutes')
+const mainRoutes = require('./routes/mainRoutes');
+
+app.set('view engines', 'ejs')
 
 //Rutas
 
