@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pope17/MusicCenter.git"
+    "url": "git+https://github.com/Chimango79/music3000.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Pope17/MusicCenter/issues"
+    "url": "https://github.com/Chimango79/music3000/issues"
   },
-  "homepage": "https://github.com/Pope17/MusicCenter#readme",
+  "homepage": "https://github.com/Chimango79/music3000#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
