@@ -2,12 +2,11 @@
 const mainController = {
     index: (req, res) => {  
     res.render('home') 
-},
 
-    login: (req, res) => {  
- //* const product = producto.find(req.params.id )*// 
-        res.render('login')
-},       
+},     
+login: (req, res) => {  
+    res.render('login')
+},
 
 register: (req, res) => {  
     res.render('register')
@@ -22,9 +21,9 @@ productCart: (req, res) => {
 },
 
 productDetail: (req, res) => {  
-    res.render('productDeatil')
+    res.render('productDetail')
 },       
 
-}
 
+}
 module.exports = mainController;

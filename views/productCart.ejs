@@ -12,49 +12,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4hKRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
-
+<%- include('./partials/header') %>
 <body>
-    <header class="site-header">
-        <!-- Encabezado-->
-        <div class="contenedor contenido-header">
-            <div class="barra">
-
-                <a href="/">
-                    <!-- Logo-->
-                    <img src="/img/logo-music.svg" alt="Logo Music Store">
-                </a>
-
-
-                <nav class="navegacion">
-                    <!-- Barra de Navegacion-->
-                    <a href="/register">Nosotros</a>
-                    <a href="/productDetail">Productos</a>
-                    <a href="/register">Registro</a>
-                    <a href="/login">Contacto</a>
-                    <a href="/productCart"> <svg xmlns="http://www.w3.org/2000/svg"
-                            class="icon icon-tabler icon-tabler-shopping-cart" width="32" height="32"
-                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <circle cx="6" cy="19" r="2" />
-                            <circle cx="17" cy="19" r="2" />
-                            <path d="M17 17h-11v-14h-2" />
-                            <path d="M6 5l14 1l-1 7h-13" />
-                        </svg> </a>
-                </nav>
-            </div>
-
-            <div class="burger-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="32"
-                    height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <line x1="4" y1="6" x2="20" y2="6" />
-                    <line x1="4" y1="12" x2="20" y2="12" />
-                    <line x1="4" y1="18" x2="20" y2="18" />
-                </svg>
-                <!-- contenedor -->
-    </header>
     <!--Este es el titulo de la pagina-->
     <main class="main">
         <h1 class="carrito">Mi carrito</h1>
@@ -159,45 +118,8 @@
 
         </div>
     </main>
-
-    <footer class="site-footer seccion">
-        <!-- Footer-->
-        <div class="contenedor contenedor-footer">
-            <nav class="navegacion">
-                <a target="_blank" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                        class="icon icon-tabler icon-tabler-brand-instagram" width="48" height="48" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="#f5b301" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <rect x="4" y="4" width="16" height="16" rx="4" />
-                        <circle cx="12" cy="12" r="3" />
-                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                    </svg></a>
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter"
-                        width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f5b301" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path
-                            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-                    </svg></a>
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok"
-                        width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f5b301" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
-                    </svg></a>
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp"
-                        width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#f5b301" fill="none"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-                        <path
-                            d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
-                    </svg></a>
-            </nav>
-
-            <p class="copyright"> Music Center | Todos los derechos reservados 2021 &copy;</p>
-        </div>
-    </footer>
+    <%- include('./partials/footer') %>        
+    <script src=“front/frontProductCart.js”></script>
 </body>
 
 </html>

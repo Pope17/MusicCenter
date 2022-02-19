@@ -1,21 +1,44 @@
 const express = require('express');
+const session = require('express-session');
+const cookies = require('cookie-parser');
 const app = express();
+const path = require('path')
 
-//disponibilizamos Public
+app.use(session ({
+    secret: "El silencio es parte de la música",
+    resave: false,
+    saveUninitialized: false,
+}));
+
+app.use(express.urlencoded({ extended: false }));
+
 app.use(express.static('public'));
 
-//requerimos el archivo de ruta
+app.listen(3000, () => console.log('Servidor funcionando en el puerto 3000'));
 
-const mainRoutes = require('./routes/mainRoutes');
+//template Engine
 
-app.set('view engines', 'ejs')
+app.set('views', path.resolve(__dirname, './views'))
+app.set("view engine", "ejs");    
 
 //Rutas
+const mainRoutes = require('./routes/mainRoutes.js');
+const userRoutes = require('./routes/userRoutes.js');
+const userLoggedMiddleware = require('./middlewares/userLoggedMiddleware.js');
+const routesProductos = require('./routes/routesProductos.js');
 
-app.use('/', mainRoutes)
+//app.use('/', index);
+app.use('/', mainRoutes);
+//app.use('/', productos);
+app.use('/login', userRoutes);
+app.use('/', routesProductos);
 
-//rutas de productos
 
-app.listen(3000, () => {
-    console.log('Servidor funcionando')
-})
+//disponibilizamos Public
+
+app.use(cookies());
+
+app.use(userLoggedMiddleware);
+
+
+module.exports = app;
