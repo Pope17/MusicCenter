@@ -24,6 +24,5 @@ productDetail: (req, res) => {
     res.render('productDetail')
 },       
 
-
 }
 module.exports = mainController;
