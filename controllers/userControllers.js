@@ -1,7 +1,8 @@
-const validationResult = require('express-validator');
+const { validationResult } = require('express-validator');
 const bcryptjs = require('bcryptjs');
 const User = require('../dataBase/models/user');
-const db = require ('../dataBase/models')
+const db = require ('../dataBase/models');
+
 
 
 
@@ -25,6 +26,9 @@ const userControllers = {
             });
         }
         /// valida la no repeticion de mail
+
+        //User.create(req.body);
+        //return res.send('Ok, registrado')
         
  const userInDb = User.findByField('email', req.body.email);
  
@@ -37,25 +41,25 @@ const userControllers = {
                 }
             },
             oldData: req.body
-     /// aca borre un codigo
+     
        }); 
     }
-    
+ 
     //crea usuario
     
     let userToCreate = {
         ...req.body,
         password: bcryptjs.hashsync(req.body.password, 10),
         avatar: req.file.filename
-    }
+        }
     
-    let userCreated = User.create(req.body);
+    let userCreated = User.create(userToCreate);
     return res.redirect('/user/login');
-    
-},
+  
+    },
 login: (req, res) => {
     return res.render('userLoginForm');
-},
+    },
 loginProcess: (req, res) => {
     let userToLogin = User.findByField('email', req.body.email);
     
@@ -77,21 +81,23 @@ loginProcess: (req, res) => {
         errors: {
             email: {
                 msg: "Sus credenciales no son correctas"
+                }
             }
-        }
-    })
-},
-profile: (req, res) => {
+        })
+    },
+    profile: (req, res) => {
     return res.render('userProfile', {
         user: req.session.userLogged
-    })
+        
+        })
     
-},
-logout: (req, res) => {
+    
+    },
+    logout: (req, res) => {
     res.clearCookie('userEmail');
     req.session.destroy();
     return res.redirect('/');
-},
+    },
 }
 
 module.exports = userControllers;

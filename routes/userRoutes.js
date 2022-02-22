@@ -1,35 +1,47 @@
 const express = require('express');
 const app = express();
 const router = express.Router();
+const multer = require('multer');
+const { body } = require('express-validator');
+
+
 
 //controllers
-const userControllers = require ('../controllers/userControllers.js');
+const usersControllers = require ('../controllers/userControllers.js');
 const uploadFile = require('../middlewares/multerMiddlewares.js');
 const validation = require('../middlewares/validationRegisterMiddlewares.js');
 const guestMiddleware = require('../middlewares/guestMiddleware.js');
 const authMiddleware = require('../middlewares/authMiddleware.js');
 //Formulario de registro 
  
-router.get('./register', guestMiddleware, userControllers.register);
+router.get('./register', guestMiddleware, usersControllers.register);
 
-//Procesar el registro
+//Procesar y validar el registro 
 
-router.post('./register', uploadFile.single('avatars'), validation, userControllers.processRegister);
+
+const validaciones = [
+    body('nombre').notEmpty().withMessage('Debes escribir tu nombre'),
+    body('apellido').notEmpty().withMessage('Debes escribir tu apellido'),
+    body('email').notEmpty().withMessage('Debes escribir un correo electrónico válido'),
+    body('contraseña').isEmail().withMessage('Debes escribir tu contraseña'),
+];
+
+router.post('/register', uploadFile.single('avatars'), validaciones, usersControllers.processRegister);
 
 //Formulario de Login
 
-router.get('./login', userControllers.login);
+router.get('/login', usersControllers.login);
 
 //Procesa el Login
 
-router.post('./login', userControllers.loginProcess);
+router.post('/login', usersControllers.loginProcess);
 
 //Perfil de usuario
 
-router.get('./profile', authMiddleware, userControllers.profile);
+router.get('/profile', authMiddleware, usersControllers.profile);
 
 //Logout
 
-router.get('./logout', authMiddleware, userControllers.logout);
+router.get('/logout', authMiddleware, usersControllers.logout);
 
 module.exports = router;

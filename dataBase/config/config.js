@@ -2,8 +2,8 @@ module.exports = {
 
   "development": {
     "username": "root",
-    "password": null,
-    "database": "database_development",
+    "password": 12345678,
+    "database": "MusicCenter",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },

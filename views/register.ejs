@@ -10,43 +10,46 @@
     <link href="css/register.css" rel="stylesheet">
     <title>Registrese</title>
 </head>
-<%- include('./partials/header') %>
+<%- include('./partials/header'); %>
 
 <body>
-    <form>
+    <form action="/register" method= "POST"
+    enctype="multipart/form-data">
         <div>
             <h3>Registrese</h3>
         </div>
         <div>
-            <label>Nombre de usuario *</label>
+            <label for=nombre>Nombre de usuario *</label>
             <input type="text" name="nombre/mail de usuario">
         </div>
 
         <div>
-            <label>Apellido *</label>
-            <input type="text" name="nombre/mail de usuario">
+            <label for=apellido>Apellido *</label>
+            <input type="text" name="apellido/mail de usuario">
         </div>
 
         <div>
-            <label>Correo electrónico *</label>
+            <label for=email>Correo electrónico *</label>
             <input type="email" name="emailUsuario">
-        </div>
+            </div>
 
         <div>
-            <label>Contraseña *</label>
+            <label for=contraseña>Contraseña *</label>
             <input type="password" name="password de usuario">
         </div>
-
+        <label for="imgAdd">Imagen</label>
+        <input type="file" name="imgAdd" id="ingAdd" size="60">
         <div>
             <h3>Sus datos personales se utilizarán para respaldar su experiencia en este sitio web, para administrar el
                 acceso a su cuenta y para otros fines descriptos en nuestra</h3>
             <h3 class="politica">política de privacidad.</h3>
         </div>
-
-        <button class="add" type="submit" value="Acceder">Registrese</button>
+   
+        <a href="/userProfile" class="add" type="submit" value="Acceder">Registrese></a>
+     
     </form>
 
-    <%- include('./partials/footer') %>
+    <%- include('./partials/footer'); %>
 </body>
 
 </html>
